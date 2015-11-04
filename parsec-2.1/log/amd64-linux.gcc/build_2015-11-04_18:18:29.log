@@ -1,0 +1,15 @@
+[PARSEC] [========== PARSEC 2.1 BUILD LOGFILE ==========]
+
+[PARSEC] Build amd64-linux.gcc started on Wed Nov 4 18:18:29 EST 2015.
+[PARSEC] Packages to build:  blackscholes bodytrack facesim ferret freqmine raytrace swaptions fluidanimate vips x264 canneal dedup streamcluster
+
+[PARSEC] [========== Building package blackscholes ==========]
+[PARSEC] [---------- Analyzing package blackscholes ----------]
+[PARSEC] blackscholes does not depend on any other packages.
+[PARSEC] [---------- Building package blackscholes ----------]
+[PARSEC] Copying source code of package blackscholes.
+[PARSEC] Running 'env version=pthreads /usr/bin/make':
+rm -f blackscholes  blackscholes.m4.cpp
+/usr/bin/m4 ./c.m4.pthreads blackscholes.c > blackscholes.m4.cpp
+/n/fs/parsec/local/gcc-4.4.0-static/bin/g++ -O3 -funroll-loops -fprefetch-loop-arrays -fpermissive -fno-exceptions -static-libgcc -Wl,--hash-style=both,--as-needed -DPARSEC_VERSION=2.1 -pthread -DENABLE_THREADS -DN=960 -DNCO=4   blackscholes.m4.cpp -L/n/fs/parsec/local/gcc-4.4.0-static/lib64 -L/n/fs/parsec/local/gcc-4.4.0-static/lib  -o blackscholes 
+[PARSEC] Error: 'env version=pthreads /usr/bin/make' failed.
